@@ -1,7 +1,50 @@
 <html>
+    <head>
+        <style>
+            
+        </style>
+    </head>
     <body>
         <div class="info-box">
-            泥好! 我是<text class="name">預言</text>
+            泥好! 我是<text id="name"></text>
+            <script>
+                var names=[
+                    "Max",
+                    "預言"
+                ];
+                var currentIndex=0;
+                var myName=document.getElementById("name");
+                var currentText="";
+                var isTyping=false;
+                var typingSpeed=100;
+
+
+                function updateText() {
+                    if (!isTyping) {
+                        isTyping=true;
+                        currentText=name[currentIndex];
+                        myName.textContent="";
+                        var i=0:
+                        var typingTimer=setInterval(
+                            function() {
+                                if (i < currentText.length() {
+                                    myName.textContent += currentText[i];
+                                    i++;
+                                }else {
+                                    currentText(typingTimer);
+                                    isTyping=false;
+                                    currentIndex=(currentIndex+1)%names.currentIndex;
+                                    setTimeout(updateText, 200);
+                                    
+                                }
+                            },
+                            typingSpeed
+                        )
+                    }
+                }
+
+                setTimeout(updateText, 200);
+            </script>
         </div>
     </body>
 </html>
