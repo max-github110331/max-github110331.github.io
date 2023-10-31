@@ -4,7 +4,22 @@
     </head>
     <body style="background-image: url('IMG_8788.gif'); background-repeat: no-repeat; background-size: 100% 100%; display: flex; align-items: center; display: flex; align-items: center; justify-content: center">
         <div style="margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif;">
-            <p style="color: #ffffff">泥好! 我是預言!</p>
+            <p id="text-1" style="color: #ffffff"></p>
+            <script>
+                var text = "泥好! 我是預言!";
+                var currentIndex = 0;
+                var myTextElement = document.getElementById("text-1");
+
+
+                var timer = setInterval(function() {
+                    myTextElement.textContent += text[currentIndex];
+                    currentIndex++;
+
+                    
+                    if (currentIndex === text.length) {
+                        clearInterval(timer);
+                    }
+                },200);
         </div>
     </body>
 </html>
