@@ -1,45 +1,7 @@
 <html>
-    <body style="background-image: "https://cdn.discordapp.com/attachments/1161642618216788052/1168798135255040010/IMG_8788.gif?ex=65531316&is=65409e16&hm=f91c6d835c86aaca1f682f27e701940ad3a80c803b9b748f4705a93f86e67bd0&"; background-repeat: no-repeat; background-size: auto;">
+    <body style="background-image: 'https://cdn.discordapp.com/attachments/1161642618216788052/1168798135255040010/IMG_8788.gif?ex=65531316&is=65409e16&hm=f91c6d835c86aaca1f682f27e701940ad3a80c803b9b748f4705a93f86e67bd0&'; background-repeat: no-repeat; background-size: auto;">
         <div class="info-box">
-            泥好! 我是<text id="name"></text>
-            <script>
-                var names=[
-                    "Max",
-                    "預言"
-                ];
-                var currentIndex=0;
-                var myName=document.getElementById("name");
-                var currentText="";
-                var isTyping=false;
-                var typingSpeed=100;
-
-
-                function updateText() {
-                    if (!isTyping) {
-                        isTyping=true;
-                        currentText=name[currentIndex];
-                        myName.textContent="";
-                        var i=0:
-                        var typingTimer=setInterval(
-                            function() {
-                                if (i < currentText.length() {
-                                    myName.textContent += currentText[i];
-                                    i++;
-                                }else {
-                                    currentText(typingTimer);
-                                    isTyping=false;
-                                    currentIndex=(currentIndex+1)%names.currentIndex;
-                                    setTimeout(updateText, 200);
-                                    
-                                }
-                            },
-                            typingSpeed
-                        );
-                    }
-                }
-
-                setTimeout(updateText, 200);
-            </script>
+            泥好! 我是預言!
         </div>
     </body>
 </html>
