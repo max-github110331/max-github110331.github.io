@@ -7,7 +7,8 @@
             @import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&display=swap');
             @import url('https://fonts.googleapis.com/css2?family=Kenia&display=swap');
             body {background-image: url('IMG_8788.gif'); background-repeat: no-repeat; background-attachment: fixed; background-size: 100% 100%; display: flex; align-items: center; align-items: center; justify-content: center;}
-            div {width: 45%; height: 12cm; margin: 0.25cm; box-sizing: border-box; background: rgba(0, 0, 0, 0.4); margin: 0; padding: 0; box-sizing: border-box; box-shadow: 0 0 4px 2px #ffffff; font-family: 'Poppins', sans-serif; transition: transform .3s; border-radius: 5px; border: 1px solid #ffffff; text-align: center;}
+            .info-box {display: flew; align-items: center; width: 45%; height: 12cm; margin: 0.25cm; box-sizing: border-box; background: rgba(0, 0, 0, 0.4); margin: 0; padding: 0; box-sizing: border-box; box-shadow: 0 0 4px 2px #ffffff; font-family: 'Poppins', sans-serif; transition: transform .3s; border-radius: 5px; border: 1px solid #ffffff; text-align: center;}
+            .info-box-content {margin: auto;}
             h3 {color: #ffffff; font-size: 15px; font-family: "Kenia", sans-serif;}
             p {color: #ffffff; font-size: 15px; font-family: "Edu TAS Beginner", cursive;}
             button {box-shadow: 0 0 4px 2px #ffffff; color: #ffffff; background: #000000; background: rgba(0, 0, 0, 0.4); padding: 10px 35px; width: 9.5cm; text-align: center; border-radius: 5px; border: 1px solid #ffffff; transition: transform 0.3s ease;}
@@ -16,42 +17,44 @@
         </style>
     </head>
     <body>
-        <div>
-            <h3 id="text-1"></h3>
-            <script>
-                var text = "Hello! I am Max! \nNice to meet you! \nWelcome to my info website!";
-                var currentIndex = 0;
-                var myTextElement = document.getElementById("text-1");
+        <div class="info-box">
+            <div class="info-box-content">
+                <h3 id="text-1"></h3>
+                <script>
+                    var text = "Hello! I am Max! \nNice to meet you! \nWelcome to my info website!";
+                    var currentIndex = 0;
+                    var myTextElement = document.getElementById("text-1");
 
 
-                var timer = setInterval(function() {
-                    myTextElement.textContent += text[currentIndex];
-                    currentIndex++;
+                    var timer = setInterval(function() {
+                        myTextElement.textContent += text[currentIndex];
+                        currentIndex++;
 
                     
-                    if (currentIndex === text.length) {
-                        clearInterval(timer);
-                    }
-                },200);
-            </script>
-            <p>General Info</p>
-            <button>🇭🇰Hong Kong🇭🇰</button>
-            <br>
-            <button>🚹Male🚹</button>
-            <br>
-            <button>🧑🏻Student🧑🏻</button>
-            <br>
-            <a href="https://www.cgcbot.com/"><button>💻CGC HK Team Owner & Developer👑</button></a>
-            <br>
-            <p>Contact Info</p>
-            <a href="https://www.instagram.com/max.ig110331/"><button>IG: max.ig110331</button></a>
-            <br>
-            <a href="https://www.instagram.com/max.close_ig110331/"><button>IG: max.close_ig110331</button></a>
-            <br>
-            <a href="https://discord.com/users/709748491873943644/"><button>Discord: max.dc110331</button></a>
-            <br>
-            <br>
-            <h5>©️由max-github110331製作, 版權所有不得抄襲©️</h5>
+                        if (currentIndex === text.length) {
+                            clearInterval(timer);
+                        }
+                    },200);
+                </script>
+                <p>General Info</p>
+                <button>🇭🇰Hong Kong🇭🇰</button>
+                <br>
+                <button>🚹Male🚹</button>
+                <br>
+                <button>🧑🏻Student🧑🏻</button>
+                <br>
+                <a href="https://www.cgcbot.com/"><button>💻CGC HK Team Owner & Developer👑</button></a>
+                <br>
+                <p>Contact Info</p>
+                <a href="https://www.instagram.com/max.ig110331/"><button>IG: max.ig110331</button></a>
+                <br>
+                <a href="https://www.instagram.com/max.close_ig110331/"><button>IG: max.close_ig110331</button></a>
+                <br>
+                <a href="https://discord.com/users/709748491873943644/"><button>Discord: max.dc110331</button></a>
+                <br>
+                <br>
+                <h5>©️由max-github110331製作, 版權所有不得抄襲©️</h5>
+            </div>
         </div>
     </body>
 </html>
