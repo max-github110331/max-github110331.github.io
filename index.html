@@ -19,24 +19,24 @@
     </head>
     <body>
         <div class="info-box">
-            <div class="info-box-content">
-                <h3 id="text-1"></h3>
-                <script>
-                    var text = "Hello! I am Max! \nNice to meet you! \nWelcome to my info website!";
-                    var currentIndex = 0;
-                    var myTextElement = document.getElementById("text-1");
+            <h3 id="text-1"></h3>
+            <script>
+                var text = "Hello! I am Max! \nNice to meet you! \nWelcome to my info website!";
+                var currentIndex = 0;
+                var myTextElement = document.getElementById("text-1");
 
 
-                    var timer = setInterval(function() {
-                        myTextElement.textContent += text[currentIndex];
-                        currentIndex++;
+                var timer = setInterval(function() {
+                    myTextElement.textContent += text[currentIndex];
+                    currentIndex++;
 
                     
-                        if (currentIndex === text.length) {
-                            clearInterval(timer);
-                        }
-                    },200);
-                </script>
+                    if (currentIndex === text.length) {
+                        clearInterval(timer);
+                    }
+                }, 200);
+            </script>
+            <div class="info-box-content">
                 <p>General Info</p>
                 <button>🇭🇰Hong Kong🇭🇰</button>
                 <br>
