@@ -1,1 +1,1 @@
-[Owner CGC HK](index.html)
+<https://owner.cgcbot.com>
