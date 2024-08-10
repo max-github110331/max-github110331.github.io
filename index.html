@@ -1,164 +1,28 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Max's Info</title>
-        <link rel="icon" type="image/x-icon" href="https://cdn.discordapp.com/attachments/987515939434168363/1207588995400474674/photo-output.jpg?ex=65e031e4&is=65cdbce4&hm=cb8eb749ed30bbe10c13237a9d68718a6ed6ae53ff76f9794d41913842270f1b&">
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&display=swap');
-            @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-            @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
-            @import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap');
-            ::-webkit-scrollbar {
-                width: 0.2cm;
-                height: 600px;
-            }
-            ::-webkit-scrollbar-track {
-                background: #888888; 
-                border-radius: 5px;
-            }
-            ::-webkit-scrollbar-thumb {
-                background: #f1f1f1; 
-                border-radius: 5px;
-            }
-            html {
-                overscroll-behavior: smooth;
-            }
-            body {
-                background-image: url("IMG_8788.gif"); 
-                background-repeat: no-repeat; 
-                background-attachment: fixed; 
-                background-size: cover; 
-                background-position: center; 
-                display: flex; 
-                align-items: center; 
-                justify-content: center;
-                cursor: grab;
-            }
-            div {
-                postition: absolute; 
-                top: 50%; 
-                transform: translate(0, 10%); 
-                padding: 10px;
-                width: 45%; 
-                height: 600px; 
-                overflow-y: auto; 
-                box-sizing: border-box;
-                margin:0 auto;
-                box-shadow: 0 0 16px 8px #000000;
-                transition: transform .3s; 
-                border-radius: 5px; 
-                text-align: center;
-            }
-            h3 {
-                color: #ffffff; 
-                font-size: 12px; 
-                font-family: "Press Start 2P";
-            }
-            p {
-                color: #ffffff; 
-                font-size: 20px;
-                font-family: "Edu TAS Beginner", cursive;
-            }
-            button {
-                box-shadow: 0 0 16px 8px #ffffff;
-                color: #ffffff; 
-                font-family: "Shadows Into Light", cursive;
-                font-size: 20px;
-                background: #000000; 
-                background: rgba(0, 0, 0, 0.4);
-                padding: 10px 35px; 
-                width: 95%;
-                text-align: center;
-                border-radius: 5px;
-                transition: transform 0.2s ease;
-                cursor: grab;
-            }
-            button:hover {
-                transform: scale(105%);
-            }
-            text {
-                font-family: "IM Fell English SC", serif;
-                color: #ffffff; 
-                font-size: 10px;
-            }
-            @media (max-width: 1023px)  {
-                body {
-                    background-image: url('IMG_8788.gif'); 
-                    background-repeat: no-repeat; 
-                    background-attachment: fixed; 
-                    background-size: cover;
-                    display: flex; 
-                }
-                div {
-                    postition: absolute; 
-                    top: 50; 
-                    transform: translate(0, 40%); 
-                    padding: 0;
-                    margin: 0; 
-                    width: 90%;
-                    height: 900px; 
-                }
-                h3 {
-                    font-size: 20px;
-                }
-                p {
-                    font-size: 30px;
-                }
-                button {
-                    font-size: 30px;
-                }
-                text {
-                    font-size: 15px;
-                }
-            }
-        </style>
-    </head>
-    <body>
-        <div class="info-box">
-            <h3 id="text-1"></h3>
-            <script>
-                var text = "Hello! I am Max! Nice to meet you! Welcome to my info website!";
-                var currentIndex = 0;
-                var myTextElement = document.getElementById("text-1");
+  <head>
+    <title>AirfoxCloud®</title>
+    <link rel="icon" type="image/x-icon" href="https://media.discordapp.net/attachments/987515939434168363/1271311181621104701/IMG_0124.jpg?ex=66b6e04d&is=66b58ecd&hm=c94f26dc074432439783c153336ca6be07c1d0002f775c9f105520c9c927deb2&"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="utf-8"/>
+    <style type="text/css">
+      html {
+        background-color: #202020;
+      }
 
-
-                var timer = setInterval(function() {
-                    myTextElement.innerHTML += text[currentIndex];
-                    currentIndex++;
-
-                    
-                    if (currentIndex === text.length) {
-                        clearInterval(timer);
-                    }
-                }, 100);
-            </script>
-            <p>General Info</p>
-            <a href="https://www.gov.hk/"><button>Hong Kong</button></a>
-            <br>
-            <button>Male</button>
-            <br>
-            <a href="https://www.plklsp.edu.hk/"><button>F.1 Student</button></a>
-            <br>
-            <a href="https://www.cgcbot.com/"><button>CGC HK Team Owner & Developer</button></a>
-            <br>
-            <a href="https://github.com/max-github110331"><button>Github Open Source</button></a>
-            <br>
-            <p>Contact Info</p>
-            <a href="https://www.instagram.com/max.ig110331/"><button>IG: <br>max.ig110331</button></a>
-            <br>
-            <a href="https://www.instagram.com/max.close_ig110331/"><button>IG: <br>max.close_ig110331</button></a>
-            <br>
-            <a href="https://discord.com/users/709748491873943644/"><button>Discord: <br>max.dc110331</button></a>
-            <br>
-            <p>The Free Gift For You</p>
-            <br>
-            <a href="https://m.youtube.com/watch?v=dQw4w9WgXcQ"><button>Discord Nitro</button></a>
-            <br>
-            <a href="https://m.youtube.com/watch?v=dQw4w9WgXcQ"><button>Youtube Premium</button></a>
-            <br>
-            <br>
-            <br>
-            <text>©️Produced by max-github110331, all rights reserved and no plagiarism allowed©️</text>
-        </div>
-    </body>
+      div {
+        color: #ffffff;
+        background-color: #383838;
+        border-radius: 5px;
+        display: grid;
+        place-items: center;
+      }
+    </style>
+  </head>
+  <body>
+      <div>
+        <h1>Coming Soon</h1>
+        <h2>網站搭建中...</h2>
+      </div>
+  </body>
 </html>
